@@ -1,4 +1,4 @@
-package otus.homework.patterns;
+package otus.homework.patterns.hw1;
 
 
 

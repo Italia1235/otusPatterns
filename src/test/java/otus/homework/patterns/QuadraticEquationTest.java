@@ -3,7 +3,7 @@ package otus.homework.patterns;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.DisplayName;
+import otus.homework.patterns.hw1.QuadraticEquation;
 
 
 public class QuadraticEquationTest {
