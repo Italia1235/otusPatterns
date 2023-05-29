@@ -4,8 +4,9 @@ package otus.homework.patterns;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.mockito.MockitoAnnotations;
 import otus.homework.patterns.hw3.Coordinates;
 import otus.homework.patterns.hw3.Movable;
 import otus.homework.patterns.hw3.Movement;
@@ -13,13 +14,13 @@ import otus.homework.patterns.hw3.Movement;
 
 
 public class MovementTest {
-    @MockBean
+    @Mock
     private Movable movable;
     private Movement movement;
 
     @Before
     public void setUp() {
-        movable = Mockito.mock(Movable.class);
+     MockitoAnnotations.openMocks(this);
         movement = new Movement(movable);
     }
 
